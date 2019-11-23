@@ -32,6 +32,5 @@ public interface OrderMapper {
 
     int updateByPrimaryKey(Order record);
 
-//    @Select("SELECT * FROM order_ WHERE id = #{id}")
     List<Order> getOrderById(int id);
 }
