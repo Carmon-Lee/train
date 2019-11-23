@@ -21,7 +21,7 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="org.shopping.order.entity" targetProject="/Users/yaowu/IdeaProjects/tmall_service/common/src/main/java/">
+        <javaModelGenerator targetPackage="entity" targetProject="/Users/yaowu/IdeaProjects/tmall_service/common/src/main/java/">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
@@ -34,7 +34,7 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table schema="tmall_ssm" tableName="propertyvalue" domainObjectName="PropertyValue" >
+        <table schema="tmall_ssm" tableName="review" domainObjectName="Review" >
             <property name="useActualColumnNames" value="false"/>
             <property name="enableSelectByExample" value="false"/>
             <property name="enableDeleteByExample" value="false"/>

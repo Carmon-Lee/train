@@ -1,13 +1,10 @@
-package review.dao;
-
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import review.entity.Review;
-import review.entity.ReviewExample;
+package mapper;
 
 import java.util.List;
+import org.apache.ibatis.annotations.Param;
+import org.shopping.order.entity.Review;
+import org.shopping.order.entity.ReviewExample;
 
-@Mapper
 public interface ReviewMapper {
     long countByExample(ReviewExample example);
 
