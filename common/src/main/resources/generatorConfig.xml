@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+<!--    <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />-->
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/tmall_ssm"
+                        userId="root"
+                        password="liguang">
+        </jdbcConnection>
+
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="org.shopping.order.entity" targetProject="/Users/yaowu/IdeaProjects/tmall_service/common/src/main/java/">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="xml"  targetProject="/Users/yaowu/IdeaProjects/tmall_service/common/src/main/java/">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="mapper"  targetProject="/Users/yaowu/IdeaProjects/tmall_service/common/src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table schema="tmall_ssm" tableName="propertyvalue" domainObjectName="PropertyValue" >
+            <property name="useActualColumnNames" value="false"/>
+            <property name="enableSelectByExample" value="false"/>
+            <property name="enableDeleteByExample" value="false"/>
+            <property name="enableCountByExample" value="false"/>
+            <property name="enableUpdateByExample" value="false"/>
+            <generatedKey column="ID" sqlStatement="mysql" identity="true" />
+        </table>
+
+    </context>
+</generatorConfiguration>

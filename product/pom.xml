@@ -8,10 +8,10 @@
         <version>1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>org.train</groupId>
-    <artifactId>user</artifactId>
+
+    <artifactId>product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user</name>
+    <name>product</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,6 +20,10 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter</artifactId>
+        </dependency>
     </dependencies>
 
 <!--    <dependencyManagement>-->
