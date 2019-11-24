@@ -1,9 +1,9 @@
-package order.dao;
+package order.commons.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import order.entity.Order;
-import order.entity.OrderExample;
+import order.commons.entity.Order;
+import order.commons.entity.OrderExample;
 
 import java.util.List;
 

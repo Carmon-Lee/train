@@ -1,4 +1,4 @@
-package order.config;
+package order.commons.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;

@@ -1,20 +1,21 @@
 package order.service;
 
-import order.dao.OrderMapper;
-import order.entity.Order;
+import lombok.extern.slf4j.Slf4j;
+import order.commons.dao.OrderMapper;
+import order.dto.OrderCreateDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
+@Slf4j
 public class OrderService {
 
     @Autowired
     private OrderMapper orderMapper;
 
-    public List<Order> getByPk() {
-        return orderMapper.getOrderById(1);
+    public String createOrder(OrderCreateDto orderCreateDto) {
+        log.info("create order:{}",orderCreateDto);
+        return "success";
     }
 
 }

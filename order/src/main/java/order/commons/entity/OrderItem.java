@@ -1,4 +1,4 @@
-package order.entity;
+package order.commons.entity;
 
 public class OrderItem {
     private Integer id;

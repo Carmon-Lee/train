@@ -1,4 +1,4 @@
-package order.entity;
+package order.commons.entity;
 
 import java.util.ArrayList;
 import java.util.Date;
