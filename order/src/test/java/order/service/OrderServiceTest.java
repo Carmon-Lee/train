@@ -1,8 +1,8 @@
-package org.shopping.order.service;
+package order.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.shopping.order.entity.Order;
+import order.entity.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit4.SpringRunner;
 

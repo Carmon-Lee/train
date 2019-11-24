@@ -1,4 +1,4 @@
-package org.shopping.order.entity;
+package order.entity;
 
 public class OrderItem {
     private Integer id;

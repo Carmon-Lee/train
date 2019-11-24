@@ -1,9 +1,9 @@
-package org.shopping.order.dao;
+package order.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.shopping.order.entity.OrderItem;
-import org.shopping.order.entity.OrderItemExample;
+import order.entity.OrderItem;
+import order.entity.OrderItemExample;
 
 import java.util.List;
 

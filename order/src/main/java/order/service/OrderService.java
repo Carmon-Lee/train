@@ -1,7 +1,7 @@
-package org.shopping.order.service;
+package order.service;
 
-import org.shopping.order.dao.OrderMapper;
-import org.shopping.order.entity.Order;
+import order.dao.OrderMapper;
+import order.entity.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

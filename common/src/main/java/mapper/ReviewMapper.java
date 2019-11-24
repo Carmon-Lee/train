@@ -2,8 +2,8 @@ package mapper;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.shopping.order.entity.Review;
-import org.shopping.order.entity.ReviewExample;
+import order.entity.Review;
+import order.entity.ReviewExample;
 
 public interface ReviewMapper {
     long countByExample(ReviewExample example);

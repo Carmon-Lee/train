@@ -16,6 +16,7 @@
         <module>review</module>
         <module>service</module>
         <module>user</module>
+        <module>shoppingApi</module>
     </modules>
 
     <parent>
@@ -37,7 +38,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
