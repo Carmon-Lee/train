@@ -1,4 +1,4 @@
-package org.liguang.product.entity;
+package product.entity;
 
 public class ProductImage {
     private Integer id;

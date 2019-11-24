@@ -1,4 +1,4 @@
-package org.liguang.product.entity;
+package product.entity;
 
 public class Category {
     private Integer id;

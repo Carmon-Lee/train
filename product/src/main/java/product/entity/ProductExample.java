@@ -1,4 +1,4 @@
-package org.liguang.product.entity;
+package product.entity;
 
 import java.util.ArrayList;
 import java.util.Date;

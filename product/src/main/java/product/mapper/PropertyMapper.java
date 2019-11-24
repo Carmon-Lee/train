@@ -1,8 +1,8 @@
-package org.liguang.product.mapper;
+package product.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import org.liguang.product.entity.Property;
-import org.liguang.product.entity.PropertyExample;
+import product.entity.Property;
+import product.entity.PropertyExample;
 
 import java.util.List;
 

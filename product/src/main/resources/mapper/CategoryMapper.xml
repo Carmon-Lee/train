@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.liguang.product.mapper.CategoryMapper">
-  <resultMap id="BaseResultMap" type="org.liguang.product.entity.Category">
+<mapper namespace="product.mapper.CategoryMapper">
+  <resultMap id="BaseResultMap" type="product.entity.Category">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
   </resultMap>
@@ -66,7 +66,7 @@
   <sql id="Base_Column_List">
     id, name
   </sql>
-  <select id="selectByExample" parameterType="org.liguang.product.entity.CategoryExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="product.entity.CategoryExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -90,20 +90,20 @@
     delete from category
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="org.liguang.product.entity.CategoryExample">
+  <delete id="deleteByExample" parameterType="product.entity.CategoryExample">
     delete from category
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="org.liguang.product.entity.Category">
+  <insert id="insert" parameterType="product.entity.Category">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
     insert into category (name)
     values (#{name,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="org.liguang.product.entity.Category">
+  <insert id="insertSelective" parameterType="product.entity.Category">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
@@ -119,7 +119,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="org.liguang.product.entity.CategoryExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="product.entity.CategoryExample" resultType="java.lang.Long">
     select count(*) from category
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -147,7 +147,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="org.liguang.product.entity.Category">
+  <update id="updateByPrimaryKeySelective" parameterType="product.entity.Category">
     update category
     <set>
       <if test="name != null">
@@ -156,7 +156,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="org.liguang.product.entity.Category">
+  <update id="updateByPrimaryKey" parameterType="product.entity.Category">
     update category
     set name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
