@@ -30,7 +30,7 @@ public class OrderService {
                 .collect(Collectors.toList());
 
         log.info("calling product service for dec stock...");
-        productService.decStock(productMapList);
+        productService.decStock(JSON.parseObject(JSON.toJSONString(orderCreateDto),Map.class));
         return "success";
     }
 
